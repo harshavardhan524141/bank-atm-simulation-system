@@ -1,0 +1,6 @@
+{
+  "name": "Bank ATM Simulation System",
+  "description": "Full-stack digital ATM and online banking simulation platform featuring customer and administrator portals, cash withdrawals, deposits, fund transfers, transaction histories, digital receipts, and audit logging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

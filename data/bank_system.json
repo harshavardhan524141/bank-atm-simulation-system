@@ -1,0 +1,306 @@
+{
+  "users": [
+    {
+      "userId": "USR-ADMIN-01",
+      "customerId": "ADMIN-1001",
+      "fullName": "Alexander Vance",
+      "email": "admin@apexbank.com",
+      "phone": "+91 98765 43210",
+      "address": "Central Banking Plaza, Tower A, Financial District",
+      "dateOfBirth": "1984-06-15",
+      "username": "admin",
+      "role": "admin",
+      "accountStatus": "active",
+      "createdAt": "2026-08-04T07:12:27.246Z",
+      "passwordHash": "082d2cc00ddb7f0cd6f3363f98a735223fd5dee212123d77f4106f6340801971bc1a0d0751c1898ad3e547137429de7ffb896021e03f20eb9a6719d638c58100",
+      "salt": "2276547a8360269b621cc94d78696329"
+    },
+    {
+      "userId": "USR-CUST-01",
+      "customerId": "CUST-849201",
+      "fullName": "Johnathan Doe",
+      "email": "john.doe@example.com",
+      "phone": "+91 98123 45678",
+      "address": "42 Greenway Boulevard, Silicon Avenue, Tech City",
+      "dateOfBirth": "1992-04-18",
+      "username": "john_doe",
+      "role": "customer",
+      "accountStatus": "active",
+      "createdAt": "2026-09-18T07:12:27.246Z",
+      "passwordHash": "749263e19a3d1619650a1618166f1760b150827a6af988377ab99bea16249deadd183125746043fe1b7fd02f83a5b819de99ab718c887e53e8645b4aa2eedfc8",
+      "salt": "8277e6bb7b8d526e69b9aed77242f5b8"
+    },
+    {
+      "userId": "USR-CUST-02",
+      "customerId": "CUST-391084",
+      "fullName": "Sarah Connor",
+      "email": "sarah.connor@example.com",
+      "phone": "+91 99234 56789",
+      "address": "77 Cyberdyne Way, Innovation Park",
+      "dateOfBirth": "1990-11-28",
+      "username": "sarah_connor",
+      "role": "customer",
+      "accountStatus": "active",
+      "createdAt": "2026-10-03T07:12:27.246Z",
+      "passwordHash": "085de6733211357f21dbd7288dda16b2bb2aa3dc4fb4d56d558b03af443a187aaa54854a5880b0becbbe49a5dd966cda98a5e22b38657ba6a1145e9bf7845e0d",
+      "salt": "f3a1b060dfb4fee4fec002fc292b8a09"
+    },
+    {
+      "userId": "USR-CUST-03",
+      "customerId": "CUST-602914",
+      "fullName": "Priya Sharma",
+      "email": "priya.sharma@example.com",
+      "phone": "+91 97345 67890",
+      "address": "15 Lotus Heritage, Metro Heights",
+      "dateOfBirth": "1995-08-12",
+      "username": "priya_sharma",
+      "role": "customer",
+      "accountStatus": "active",
+      "createdAt": "2026-10-13T07:12:27.246Z",
+      "passwordHash": "95537a6f88b6a53c717a8c4f060efbe2128e74fcf848f7aeb154aa80a6b1f83adc9d4d7a69d418c8ccc57549219f0cddfcc44655a254420999dc011c7db105ea",
+      "salt": "09f19d70fd3c56bcac8a296bf9cbb1f8"
+    }
+  ],
+  "accounts": [
+    {
+      "accountId": "ACC-849201",
+      "userId": "USR-CUST-01",
+      "accountNumber": "ACCT-4091-8823-1092",
+      "accountType": "SAVINGS",
+      "balance": 43500,
+      "accountStatus": "active",
+      "dailyWithdrawalLimit": 50000,
+      "dailyWithdrawnToday": 2500,
+      "lastWithdrawalDate": "2026-11-02",
+      "createdAt": "2026-09-18T07:12:27.246Z"
+    },
+    {
+      "accountId": "ACC-391084",
+      "userId": "USR-CUST-02",
+      "accountNumber": "ACCT-5820-1940-7731",
+      "accountType": "CURRENT",
+      "balance": 14300,
+      "accountStatus": "active",
+      "dailyWithdrawalLimit": 100000,
+      "dailyWithdrawnToday": 0,
+      "lastWithdrawalDate": "2026-11-02",
+      "createdAt": "2026-10-03T07:12:27.246Z"
+    },
+    {
+      "accountId": "ACC-602914",
+      "userId": "USR-CUST-03",
+      "accountNumber": "ACCT-9102-3341-6508",
+      "accountType": "SAVINGS",
+      "balance": 94250,
+      "accountStatus": "active",
+      "dailyWithdrawalLimit": 50000,
+      "dailyWithdrawnToday": 0,
+      "lastWithdrawalDate": "2026-11-02",
+      "createdAt": "2026-10-13T07:12:27.246Z"
+    }
+  ],
+  "transactions": [
+    {
+      "transactionId": "TXN-37885900",
+      "senderAccountId": "ACC-849201",
+      "senderAccountNumber": "ACCT-4091-8823-1092",
+      "senderName": "Johnathan Doe",
+      "receiverAccountId": "ACC-391084",
+      "receiverAccountNumber": "ACCT-5820-1940-7731",
+      "receiverName": "Sarah Connor",
+      "transactionType": "TRANSFER",
+      "amount": 1500,
+      "previousBalance": 45000,
+      "updatedBalance": 43500,
+      "description": "Fund Transfer to Sarah Connor (ACCT-5820-1940-7731)",
+      "remarks": "Monthly Shared Expenses",
+      "transactionStatus": "SUCCESS",
+      "idempotencyKey": null,
+      "createdAt": "2026-11-02T07:13:33.364Z"
+    },
+    {
+      "transactionId": "TXN-11558651",
+      "senderAccountId": "ACC-849201",
+      "senderAccountNumber": "ACCT-4091-8823-1092",
+      "senderName": "Johnathan Doe",
+      "receiverAccountId": null,
+      "receiverAccountNumber": null,
+      "receiverName": null,
+      "transactionType": "WITHDRAWAL",
+      "amount": 500,
+      "previousBalance": 45500,
+      "updatedBalance": 45000,
+      "description": "Cash Withdrawal at Digital ATM #26",
+      "remarks": "ATM Dispenser Cash Out",
+      "transactionStatus": "SUCCESS",
+      "idempotencyKey": null,
+      "createdAt": "2026-11-02T07:13:21.728Z"
+    },
+    {
+      "transactionId": "TXN-90214811",
+      "senderAccountId": null,
+      "senderAccountNumber": null,
+      "senderName": null,
+      "receiverAccountId": "ACC-849201",
+      "receiverAccountNumber": "ACCT-4091-8823-1092",
+      "receiverName": "Johnathan Doe",
+      "transactionType": "DEPOSIT",
+      "amount": 50000,
+      "previousBalance": 0,
+      "updatedBalance": 50000,
+      "description": "Initial Cash Deposit at Apex ATM #01",
+      "remarks": "Initial Account Funding",
+      "transactionStatus": "SUCCESS",
+      "createdAt": "2026-10-18T07:12:27.246Z"
+    },
+    {
+      "transactionId": "TXN-90214812",
+      "senderAccountId": "ACC-849201",
+      "senderAccountNumber": "ACCT-4091-8823-1092",
+      "senderName": "Johnathan Doe",
+      "receiverAccountId": null,
+      "receiverAccountNumber": null,
+      "receiverName": null,
+      "transactionType": "WITHDRAWAL",
+      "amount": 2500,
+      "previousBalance": 50000,
+      "updatedBalance": 47500,
+      "description": "Cash Withdrawal at Apex ATM #01",
+      "remarks": "ATM Cash Withdrawal",
+      "transactionStatus": "SUCCESS",
+      "createdAt": "2026-10-25T07:12:27.246Z"
+    },
+    {
+      "transactionId": "TXN-90214813",
+      "senderAccountId": "ACC-849201",
+      "senderAccountNumber": "ACCT-4091-8823-1092",
+      "senderName": "Johnathan Doe",
+      "receiverAccountId": "ACC-391084",
+      "receiverAccountNumber": "ACCT-5820-1940-7731",
+      "receiverName": "Sarah Connor",
+      "transactionType": "TRANSFER",
+      "amount": 5000,
+      "previousBalance": 47500,
+      "updatedBalance": 42500,
+      "description": "Fund Transfer to Sarah Connor (ACCT-5820-1940-7731)",
+      "remarks": "Project reimbursement",
+      "transactionStatus": "SUCCESS",
+      "createdAt": "2026-10-30T07:12:27.246Z"
+    },
+    {
+      "transactionId": "TXN-90214814",
+      "senderAccountId": null,
+      "senderAccountNumber": null,
+      "senderName": null,
+      "receiverAccountId": "ACC-849201",
+      "receiverAccountNumber": "ACCT-4091-8823-1092",
+      "receiverName": "Johnathan Doe",
+      "transactionType": "DEPOSIT",
+      "amount": 5000,
+      "previousBalance": 42500,
+      "updatedBalance": 47500,
+      "description": "Cash Deposit at Apex ATM #04",
+      "remarks": "ATM Cash Deposit",
+      "transactionStatus": "SUCCESS",
+      "createdAt": "2026-11-01T07:12:27.246Z"
+    },
+    {
+      "transactionId": "TXN-90214815",
+      "senderAccountId": "ACC-849201",
+      "senderAccountNumber": "ACCT-4091-8823-1092",
+      "senderName": "Johnathan Doe",
+      "receiverAccountId": null,
+      "receiverAccountNumber": null,
+      "receiverName": null,
+      "transactionType": "WITHDRAWAL",
+      "amount": 2000,
+      "previousBalance": 47500,
+      "updatedBalance": 45500,
+      "description": "Cash Withdrawal at Apex ATM #02",
+      "remarks": "Daily Expense Cash",
+      "transactionStatus": "SUCCESS",
+      "createdAt": "2026-11-02T07:12:27.488Z"
+    }
+  ],
+  "notifications": [
+    {
+      "notificationId": "NOTIF-1793603613364-355",
+      "userId": "USR-CUST-02",
+      "title": "Credit Alert: Inward Fund Transfer",
+      "message": "₹1,500 received from Johnathan Doe. Updated balance: ₹14,300.",
+      "notificationType": "TRANSACTION",
+      "isRead": false,
+      "createdAt": "2026-11-02T07:13:33.364Z"
+    },
+    {
+      "notificationId": "NOTIF-1793603613364-492",
+      "userId": "USR-CUST-01",
+      "title": "Debit Alert: Fund Transfer",
+      "message": "₹1,500 transferred to Sarah Connor (ACCT-5820-1940-7731). Balance: ₹43,500.",
+      "notificationType": "TRANSACTION",
+      "isRead": false,
+      "createdAt": "2026-11-02T07:13:33.364Z"
+    },
+    {
+      "notificationId": "NOTIF-1793603601793-157",
+      "userId": "USR-CUST-01",
+      "title": "Debit Alert: Cash Withdrawal",
+      "message": "₹500 withdrawn from ATM. Available balance: ₹45,000.",
+      "notificationType": "TRANSACTION",
+      "isRead": false,
+      "createdAt": "2026-11-02T07:13:21.793Z"
+    },
+    {
+      "notificationId": "NOTIF-101",
+      "userId": "USR-CUST-01",
+      "title": "Welcome to Apex Bank Digital ATM",
+      "message": "Your account ACCT-4091-8823-1092 is active and ready for simulated digital transactions.",
+      "notificationType": "ACCOUNT",
+      "isRead": false,
+      "createdAt": "2026-10-18T07:12:27.246Z"
+    },
+    {
+      "notificationId": "NOTIF-102",
+      "userId": "USR-CUST-01",
+      "title": "Debit Alert: ₹2,000 Withdrawn",
+      "message": "₹2,000 was withdrawn at Apex ATM #02. Your updated balance is ₹45,500.00.",
+      "notificationType": "TRANSACTION",
+      "isRead": false,
+      "createdAt": "2026-11-02T07:12:27.488Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "logId": "AUD-001",
+      "adminId": "USR-ADMIN-01",
+      "adminName": "Alexander Vance",
+      "action": "SYSTEM_BOOTSTRAP",
+      "targetId": "SYSTEM",
+      "targetType": "SYSTEM",
+      "description": "Initial Bank ATM Simulation core database initialized with default configurations.",
+      "timestamp": "2026-09-18T07:12:27.246Z"
+    },
+    {
+      "logId": "AUD-002",
+      "adminId": "USR-ADMIN-01",
+      "adminName": "Alexander Vance",
+      "action": "CUSTOMER_VERIFICATION",
+      "targetId": "USR-CUST-01",
+      "targetType": "USER",
+      "description": "Customer Johnathan Doe verified and granted Standard Savings privileges.",
+      "timestamp": "2026-09-23T07:12:27.246Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "0c008e19fe0b29e2f34e84e52137cf43393bdb7afc0d530bbf273b3f0070707d",
+      "userId": "USR-CUST-01",
+      "expiresAt": 1793689986397
+    },
+    {
+      "token": "2e4ec51375a3d9cebe7e5c768127ee65ef984d49ef909615b0aa6a6efc89ad1f",
+      "userId": "USR-ADMIN-01",
+      "expiresAt": 1793690031699
+    }
+  ]
+}
